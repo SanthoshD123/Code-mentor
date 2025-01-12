@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Mentor Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <div class="chat-header">
+                <h2>Code Mentor Pro</h2>
+                <div class="header-controls">
+                    <div class="mode-selector">
+                        <button class="mode-button active" onclick="setMode('normal')">Normal</button>
+                        <button class="mode-button" onclick="setMode('eli5')">ELI5</button>
+                        <button class="mode-button" onclick="setMode('debug')">Debug</button>
+                        <button class="mode-button" onclick="setMode('expert')">Expert</button>
+                    </div>
+                    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+                </div>
+            </div>
+
+            <div id="chat-container" class="chat-container">
+                <div class="message bot-message">
+                    Welcome to Code Mentor Pro! How can I assist you today?
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-panels">
+            <div class="stats-panel">
+                <h3>Your Progress</h3>
+                <div class="stats-card">
+                    <span>Experience Points</span>
+                    <div class="stat-value" id="xp-value">0 XP</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <span>Skill Level</span>
+                    <div class="stat-value" id="level-value">Beginner</div>
+                </div>
+                <div class="stats-card">
+                    <span>Streak</span>
+                    <div class="stat-value" id="streak-value">1 day</div>
+                </div>
+            </div>
+
+            <div class="about-panel">
+                <h3>About</h3>
+                <p>
+                    This chatbot is designed to assist with programming-related queries. It can:
+                    <ul>
+                        <li>Explain programming concepts in simple terms (ELI5 mode).</li>
+                        <li>Debug code and suggest fixes (Debug mode).</li>
+                        <li>Provide advanced programming guidance (Expert mode).</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="developer-panel">
+                <h3>Developed By</h3>
+                <p>Santhosh D</p>
+                <p>Email: <a href="mailto:santhosh.damu78@gmail.com">santhosh.damu78@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/santhosh-d-a58b69200/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+
+                    </a>
+                    <a href="https://github.com/SanthoshD123" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
